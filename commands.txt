@@ -1,0 +1,1 @@
+bumpversion --new-version 4.0 release --allow-dirty (current-versions=4.0rc1)
