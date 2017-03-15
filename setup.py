@@ -2,29 +2,45 @@ from setuptools import setup
 
 
 setup(
-    name='cloudify-release-tool',
-    version='version=version='4.0rc2'',
-    url='https://github.com/cloudify-cosmo/cloudify-build-system',
+    name='cloudify',
+    version='4.0rc2',
     author='Gigaspaces',
     author_email='cosmo-admin@gigaspaces.com',
+    packages=['cloudify_cli',
+              'cloudify_cli.cli',
+              'cloudify_cli.commands',
+              'cloudify_cli.bootstrap',
+              'cloudify_cli.bootstrap.resources',
+              'cloudify_cli.config'],
+    package_data={
+        'cloudify_cli': [
+            'VERSION',
+            'config/config_template.yaml',
+            'bootstrap/resources/install_plugins.sh.template'
+        ],
+    },
     license='LICENSE',
-    platforms='All',
-    description='Cloudify Release Tool',
-    packages=['crt'],
+    description="Cloudify's Command Line Interface",
     entry_points={
         'console_scripts': [
-            'crt = crt.crt:main',
+            'cfy = cloudify_cli.main:_cfy'
         ]
     },
     install_requires=[
-        'click==6.2',
-        'pyyaml==3.1.beta.0',
-        'repex==0.4.0',
-        'python-vagrant==0.5.8',
-        'fabric==version='4.0rc2'',
-        'gitpython==0.3.6',
-        'boto==2.36.0',
-        'requests==2.7.0',
-        'sh==1.beta.alpha'
-    ],
+        'click==4.0',
+        'wagon==0.3.2',
+        'pyyaml==3.10',
+        'fabric==1.8.3',
+        'jinja2==2.7.2',
+        'retrying==1.3.3',
+        'colorama==0.3.3',
+        'requests>=2.7.0,<3.0.0',
+        'PrettyTable>=0.7,<0.8',
+        'click_didyoumean==0.0.3',
+        'cloudify-dsl-parser==4.0rc1',
+        'cloudify-script-plugin==1.4',
+        'cloudify-rest-client==4.0rc1',
+        'cloudify-plugins-common==4.0rc1',
+        'backports.shutil_get_terminal_size==1.0.0',
+    ]
 )
