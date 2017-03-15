@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='cloudify-release-tool',
-    version='version="version=4.0rc2"',
+    version='version=version='4.0rc2'',
     url='https://github.com/cloudify-cosmo/cloudify-build-system',
     author='Gigaspaces',
     author_email='cosmo-admin@gigaspaces.com',
@@ -21,7 +21,7 @@ setup(
         'pyyaml==3.1.beta.0',
         'repex==0.4.0',
         'python-vagrant==0.5.8',
-        'fabric=="version=4.0rc2"',
+        'fabric==version='4.0rc2'',
         'gitpython==0.3.6',
         'boto==2.36.0',
         'requests==2.7.0',
