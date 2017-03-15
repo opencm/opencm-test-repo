@@ -1,1 +1,16 @@
-bumpversion --new-version 4.0 release --allow-dirty (current-versions=4.0rc1)
+#bumpversion --new-version 4.0 release --allow-dirty (current-versions=4.0rc1)
+#tag_name is templated and set by default to `v{new_version}`
+#Javier bumpversion config - https://github.com/audreyr/cookiecutter-pypackage/blob/master/setup.cfg
+[bumpversion]
+current_version = 0.1.1
+commit = True
+tag = True
+
+[metadata]
+description-file = README.rst
+
+[bumpversion:file:setup.py]
+search = version='{current_version}'
+replace = version='{new_version}'
+
+#It is passible to pass the tag name explicitly, but it would be easier to set `tag_name = {new_version}` in the configuration file (if both the tag and the version could use the same value).
