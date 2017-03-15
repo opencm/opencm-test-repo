@@ -1,0 +1,13 @@
+[bumpversion]
+current_version = 4.0rc1
+parse = (?P<num>\d+)\.(?P<num>\d+)(?P<release>.*)
+serialize =
+  {num}.{num}{release}
+  {num}.{num}
+
+[bumpversion:part:release]
+values =
+  rc1
+  a{num}
+ 
+[bumpversion:file:setup.py] 
