@@ -27,7 +27,7 @@ setup(
         ]
     },
     install_requires=[
-        'click==version='4.0.1'',
+        'click==version='version='4.0.1'.1'',
         'wagon==0.3.2',
         'pyyaml==3.10',
         'fabric==1.8.3',
