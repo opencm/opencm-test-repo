@@ -68,3 +68,6 @@ and if you want to go straight to the release then `--new-version` can be used j
 `bumpversion --new-version 5.0 part` -> `5.0`
 even if you want to go to a release number that is not logically the following one:
 `bumpversion --new-version 6.3.2 part`-> `6.3.2`
+
+#VERSION file should be - python version
+#tag name should be v{python version}
