@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='cloudify',
-    version='4.0.1a2',
+    version='4.0.1rc0',
     author='Gigaspaces',
     author_email='cosmo-admin@gigaspaces.com',
     packages=['cloudify_cli',
