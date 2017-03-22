@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='cloudify',
-    version='4.5',
+    version='cloudify-dsl-parser=='5.0'',
     author='Gigaspaces',
     author_email='cosmo-admin@gigaspaces.com',
     packages=['cloudify_cli',
@@ -37,10 +37,10 @@ setup(
         'requests>=2.7.0,<3.0.0',
         'PrettyTable>=0.7,<0.8',
         'click_didyoumean==0.0.3',
-        'cloudify-dsl-parser==4.5',
+        'cloudify-dsl-parser==cloudify-dsl-parser=='5.0'',
         'cloudify-script-plugin==1.4',
-        'cloudify-rest-client==4.5',
-        'cloudify-plugins-common==4.5',
+        'cloudify-rest-client==cloudify-dsl-parser=='5.0'',
+        'cloudify-plugins-common==cloudify-dsl-parser=='5.0'',
         'backports.shutil_get_terminal_size==1.0.0',
     ]
 )
