@@ -1,9 +1,11 @@
-from setuptools import setup
+etuptools import setup
 
 
 setup(
     name='cloudify',
-    version='cloudify-dsl-parser=='5.0'',
+    version='
+version='4.1'
+cloudify-dsl-parser=='4.1'',
     author='Gigaspaces',
     author_email='cosmo-admin@gigaspaces.com',
     packages=['cloudify_cli',
@@ -27,7 +29,9 @@ setup(
         ]
     },
     install_requires=[
-        'click==version='version='4.0.1'.1'',
+        'click==
+version='4.1'
+cloudify-dsl-parser=='4.1'',
         'wagon==0.3.2',
         'pyyaml==3.10',
         'fabric==1.8.3',
@@ -37,10 +41,16 @@ setup(
         'requests>=2.7.0,<3.0.0',
         'PrettyTable>=0.7,<0.8',
         'click_didyoumean==0.0.3',
-        'cloudify-dsl-parser==cloudify-dsl-parser=='5.0'',
+        'cloudify-dsl-parser==
+version='4.1'
+cloudify-dsl-parser=='4.1'',
         'cloudify-script-plugin==1.4',
-        'cloudify-rest-client==cloudify-dsl-parser=='5.0'',
-        'cloudify-plugins-common==cloudify-dsl-parser=='5.0'',
+        'cloudify-rest-client==
+version='4.1'
+cloudify-dsl-parser=='4.1'',
+        'cloudify-plugins-common==
+version='4.1'
+cloudify-dsl-parser=='4.1'',
         'backports.shutil_get_terminal_size==1.0.0',
     ]
 )
